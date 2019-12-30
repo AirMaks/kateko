@@ -29,4 +29,5 @@ def echo_all(message):
         bot.reply_to(message, 'Неправльная команда.')
 
 
-bot.polling(none_stop=True, timeout=123)
+
+bot.polling()
