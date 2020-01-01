@@ -2,7 +2,6 @@ import telebot
 import env_vars
 from telebot import types
 
-
 bot = telebot.TeleBot(env_vars.api_tok)
 
 markup_menu = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
@@ -27,7 +26,6 @@ def echo_all(message):
         bot.reply_to(message, 'Хорошо, как узнаешь дай знать!', reply_markup=markup_menu)
     else:
         bot.reply_to(message, 'Неправльная команда.')
-
 
 
 bot.polling()
