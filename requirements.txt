@@ -1,3 +1,5 @@
+telegram
+boto
 telebot
 django-scheduler
 appdirs==1.4.3
